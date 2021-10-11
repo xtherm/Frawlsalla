@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+
+body {
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background-color: white;
+  top: 0;
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  z-index: 12;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 36px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  /* font-weight: bold; */
+  padding: 1rem;
+  border-bottom: 3px solid transparent;
+}
+
+.navigation .nav-item:hover {
+  border-bottom: 2px solid #f96051;
+}
+
+.navigation .nav-item.active {
+  border-bottom: 2px solid #f96051;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background-color: #f96051;
+  color: white !important;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.dropdown {
+  position: inline;
+  display: none;
+}
+.dropdown a {
+  color: black;
+}
+
+.dropdown-content {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content .drop:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.drop-btn {
+  text-decoration: none;
+
+  color: #f96051 !important;
+}
+
+.body1 {
+  /* background-color: #36393f; */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  overflow: hidden;
+}
+.body1 img {
+  width: 100%;
+}
+.slider img {
+  display: none;
+}
+.slider img.show {
+  display: inline-block;
+}
+
+.prev,
+.next {
+  color: white;
+
+  cursor: pointer;
+  font-size: 2rem;
+}
+.prev {
+  position: relative;
+  left: 5%;
+}
+
+.next {
+  position: relative;
+  right: 5%;
+}
+
+.body2 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: white;
+}
+
+.body2 h2 {
+  text-align: center;
+}
+.cards {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card1,
+.card2,
+.card3 {
+  margin-bottom: 1rem;
+}
+
+.cards p {
+  margin: 20px 20px;
+}
+
+.cardinfo {
+  font-size: 12px;
+}
+
+.cardpar {
+  font-size: 14px;
+
+  text-align: justify;
+}
+
+.card1 {
+  width: 350px;
+  height: 540px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card2 {
+  width: 350px;
+  height: 540px;
+}
+
+.card3 {
+  width: 350px;
+  height: 540px;
+}
+
+.news {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.body3 {
+  width: 100%;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.body3-text {
+  margin-right: 2rem;
+}
+
+.playhow-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.playhow-title2 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 3rem;
+  color: #f96051;
+}
+
+.playhow-par {
+  font-size: 18px;
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+
+.playhow-img {
+  margin: 3rem;
+  padding: 3rem;
+}
+
+.body4 {
+  background-color: #f96051;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.over {
+  margin-top: 50px;
+  margin-bottom: 3rem;
+  font-size: 36px;
+  font-weight: 700;
+
+  color: white;
+}
+
+.champs {
+  bottom: 0;
+}
+
+.body5 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.body5 img {
+  margin-right: 22.5px;
+}
+.body5-text {
+  margin-left: 22.5px;
+}
+
+.body5-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.body5-desc {
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+.footer {
+  background-color: #36393f;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.footer .container {
+  justify-content: space-between;
+}
+
+.footer-left {
+  color: white;
+  width: 30%;
+}
+
+.footer-nav {
+  margin-bottom: 1rem;
+}
+
+.footerlogo {
+  display: flex;
+  align-items: center;
+}
+
+.footerlogo p {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.footerlogo img {
+  width: 60px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.footer-right {
+  display: flex;
+
+  width: 60%;
+  justify-content: space-between;
+}
+
+.footer-right div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right p {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: inherit;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+}
+
+.sosmed img {
+  height: 20px;
+  width: 20px;
+}
+
+.sosdiv {
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navigation .nav-item {
+    display: none;
+  }
+  .navigation .btn-primary {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+    color: black;
+    font-size: 30px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    margin-bottom: 1rem;
+  }
+  .card2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .body3.container {
+  }
+  /* .body3-text,
+  .body3-img {
+    width: 85%;
+  } */
+}
+@media (max-width: 768px) {
+  .navigation .nav-item {
+    display: none;
+  }
+  .navigation .btn-primary {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+    color: black;
+    font-size: 30px;
+  }
+
+  .cards {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navigation .nav-item {
+    display: none;
+  }
+  .navigation .btn-primary {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+    color: black;
+    font-size: 30px;
+  }
+  .header .logo {
+    display: none;
+  }
+
+  .cards {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    margin-bottom: 1rem;
+  }
+  /* .mobile {
+    display: inline-block;
+    color: black;
+    font-size: 30px;
+  } */
+
+  .body3 .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .body3 {
+    width: 100%;
+    /* padding: 0 1.5rem; */
+  }
+
+  .body3-text {
+    width: 100%;
+
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .playhow-title,
+  .playhow-title2 {
+    font-size: 32px;
+  }
+
+  .playhow {
+    padding-bottom: 1.5rem;
+  }
+
+  .body4 {
+    padding: 0 1.5rem;
+  }
+  .body4 .container {
+    flex-direction: column;
+  }
+
+  .body5 .container {
+    flex-direction: column;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+  .footer-right {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer-item {
+    width: 40%;
+  }
+  .footer {
+    height: 100%;
+    padding: 0.75rem 1.5rem;
+  }
+  img {
+    width: 100%;
+  }
+  .logo {
+    width: 50%;
+  }
+
+  .body5 {
+    padding: 0.75rem 1.5rem;
+  }
+  .body5 img {
+    margin-right: 0;
+  }
+  .body5-text {
+    margin-left: 0;
+  }
+
+  /* .body3 {
+    padding: 0.75rem 3.5rem;
+  } */
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .body4 .container {
+    flex-direction: column;
+  }
+}
